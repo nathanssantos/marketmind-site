@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "title": "MarketMind — Asistente de Trading Algoritmico",
+    "description": "Aplicacion de escritorio open-source con visualizacion avanzada de graficos, deteccion automatica de setups, motor de backtesting y soporte multi-exchange."
+  },
+  "nav": {
+    "features": "Funciones",
+    "screenshots": "Capturas",
+    "techStack": "Tecnologias",
+    "openSource": "Open Source"
+  },
+  "hero": {
+    "badge": "Open Source",
+    "title": "Trading Algoritmico,",
+    "titleHighlight": "Reinventado",
+    "description": "Una poderosa aplicacion de escritorio que combina visualizacion avanzada de graficos con deteccion automatica de setups, backtesting y trading multi-exchange — hecha para traders que exigen precision.",
+    "cta": {
+      "github": "Ver en GitHub",
+      "download": "Descargar"
+    }
+  },
+  "features": {
+    "title": "Todo Lo Que Necesitas",
+    "subtitle": "Herramientas profesionales para trading algoritmico, todo en una aplicacion de escritorio open-source.",
+    "charts": {
+      "title": "Graficos Avanzados",
+      "description": "Renderizado de klines de alto rendimiento con Canvas, 25+ indicadores tecnicos, herramientas de dibujo, perfil de volumen y mapa de liquidez."
+    },
+    "autoTrading": {
+      "title": "Auto-Trading",
+      "description": "Ejecuta trades automaticamente con 105+ estrategias backtestadas, ordenes OCO, gestion de riesgo y monitoreo en tiempo real via WebSocket."
+    },
+    "backtesting": {
+      "title": "Motor de Backtesting",
+      "description": "Optimizacion walk-forward, simulacion Monte Carlo, pruebas por lotes con multiples estrategias, simbolos y timeframes."
+    },
+    "security": {
+      "title": "Seguridad Bancaria",
+      "description": "Almacenamiento cifrado AES-256-CBC para claves API, hashing Argon2, autenticacion por sesion con 2FA opcional."
+    },
+    "exchanges": {
+      "title": "Multi-Exchange",
+      "description": "Opera cripto en Binance y acciones americanas via Interactive Brokers — interfaz unificada, una plataforma poderosa."
+    },
+    "multiLanguage": {
+      "title": "Multi-Idioma",
+      "description": "Soporte completo de internacionalizacion con Ingles, Portugues, Espanol y Frances — cambia de idioma facilmente."
+    },
+    "themes": {
+      "title": "Temas Oscuro y Claro",
+      "description": "Tematizacion elegante basada en tokens semanticos con soporte completo de modos oscuro y claro en todos los componentes."
+    },
+    "openSource": {
+      "title": "100% Open Source",
+      "description": "Licencia MIT. Inspecciona, modifica y contribuye a todo el codigo — del frontend al backend."
+    }
+  },
+  "screenshots": {
+    "title": "Velo en Accion",
+    "subtitle": "Un vistazo a la interfaz de MarketMind en diferentes vistas y temas.",
+    "placeholder": "Capturas proximamente"
+  },
+  "techStack": {
+    "title": "Construido con Tecnologia Moderna",
+    "subtitle": "Un stack cuidadosamente elegido para rendimiento, seguridad de tipos y experiencia de desarrollo.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "infrastructure": "Infraestructura"
+  },
+  "stats": {
+    "title": "En Numeros",
+    "subtitle": "Calidad y escala en la que puedes confiar.",
+    "tests": "Tests Pasando",
+    "strategies": "Estrategias de Trading",
+    "indicators": "Indicadores Tecnicos",
+    "languages": "Idiomas",
+    "exchanges": "Exchanges",
+    "version": "Version Actual"
+  },
+  "openSource": {
+    "title": "Gratuito y Open Source",
+    "subtitle": "MarketMind tiene licencia MIT y se desarrolla abiertamente. Las contribuciones son bienvenidas.",
+    "cta": {
+      "github": "Dar Estrella en GitHub",
+      "contribute": "Contribuir"
+    },
+    "license": "Licencia MIT"
+  },
+  "footer": {
+    "description": "Asistente de trading algoritmico open-source.",
+    "links": "Enlaces",
+    "legal": "Legal",
+    "builtBy": "Creado por",
+    "license": "Licencia MIT",
+    "privacy": "Politica de Privacidad",
+    "terms": "Terminos de Servicio"
+  }
+}

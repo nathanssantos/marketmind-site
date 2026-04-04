@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "title": "MarketMind — Algorithmic Trading Assistant",
+    "description": "Open-source desktop app with advanced chart visualization, automated setup detection, backtesting engine, and multi-exchange support."
+  },
+  "nav": {
+    "features": "Features",
+    "screenshots": "Screenshots",
+    "techStack": "Tech Stack",
+    "openSource": "Open Source"
+  },
+  "hero": {
+    "badge": "Open Source",
+    "title": "Algorithmic Trading,",
+    "titleHighlight": "Reimagined",
+    "description": "A powerful desktop application combining advanced chart visualization with automated setup detection, backtesting, and multi-exchange trading — built for traders who demand precision.",
+    "cta": {
+      "github": "View on GitHub",
+      "download": "Download"
+    }
+  },
+  "features": {
+    "title": "Everything You Need",
+    "subtitle": "Professional-grade tools for algorithmic trading, all in one open-source desktop application.",
+    "charts": {
+      "title": "Advanced Charts",
+      "description": "High-performance Canvas-based kline rendering with 25+ technical indicators, drawing tools, volume profile, and liquidity heatmap."
+    },
+    "autoTrading": {
+      "title": "Auto-Trading",
+      "description": "Execute trades automatically with 105+ backtested strategies, OCO orders, risk management, and real-time monitoring via WebSocket."
+    },
+    "backtesting": {
+      "title": "Backtesting Engine",
+      "description": "Walk-forward optimization, Monte Carlo simulation, batch testing across multiple strategies, symbols, and timeframes."
+    },
+    "security": {
+      "title": "Bank-Grade Security",
+      "description": "AES-256-CBC encrypted storage for API keys, Argon2 password hashing, session-based auth with optional 2FA."
+    },
+    "exchanges": {
+      "title": "Multi-Exchange",
+      "description": "Trade crypto on Binance and US stocks via Interactive Brokers — unified interface, one powerful platform."
+    },
+    "multiLanguage": {
+      "title": "Multi-Language",
+      "description": "Full internationalization support with English, Portuguese, Spanish, and French — switch languages seamlessly."
+    },
+    "themes": {
+      "title": "Dark & Light Themes",
+      "description": "Beautiful semantic token-based theming with full dark and light mode support across every component."
+    },
+    "openSource": {
+      "title": "100% Open Source",
+      "description": "MIT licensed. Inspect, modify, and contribute to the entire codebase — from frontend to backend."
+    }
+  },
+  "screenshots": {
+    "title": "See It in Action",
+    "subtitle": "A glimpse of MarketMind's interface across different views and themes.",
+    "placeholder": "Screenshots coming soon"
+  },
+  "techStack": {
+    "title": "Built With Modern Tech",
+    "subtitle": "A carefully chosen stack for performance, type safety, and developer experience.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "infrastructure": "Infrastructure"
+  },
+  "stats": {
+    "title": "By the Numbers",
+    "subtitle": "Quality and scale you can trust.",
+    "tests": "Tests Passing",
+    "strategies": "Trading Strategies",
+    "indicators": "Technical Indicators",
+    "languages": "Languages",
+    "exchanges": "Exchanges",
+    "version": "Current Version"
+  },
+  "openSource": {
+    "title": "Free & Open Source",
+    "subtitle": "MarketMind is MIT licensed and built in the open. Contributions are welcome.",
+    "cta": {
+      "github": "Star on GitHub",
+      "contribute": "Contribute"
+    },
+    "license": "MIT License"
+  },
+  "footer": {
+    "description": "Open-source algorithmic trading assistant.",
+    "links": "Links",
+    "legal": "Legal",
+    "builtBy": "Built by",
+    "license": "MIT License",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

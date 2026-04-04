@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "title": "MarketMind — Assistente de Trading Algoritmico",
+    "description": "Aplicativo desktop open-source com visualizacao avancada de graficos, deteccao automatica de setups, motor de backtesting e suporte multi-exchange."
+  },
+  "nav": {
+    "features": "Recursos",
+    "screenshots": "Capturas",
+    "techStack": "Tecnologias",
+    "openSource": "Open Source"
+  },
+  "hero": {
+    "badge": "Open Source",
+    "title": "Trading Algoritmico,",
+    "titleHighlight": "Reinventado",
+    "description": "Um poderoso aplicativo desktop que combina visualizacao avancada de graficos com deteccao automatica de setups, backtesting e trading multi-exchange — feito para traders que exigem precisao.",
+    "cta": {
+      "github": "Ver no GitHub",
+      "download": "Download"
+    }
+  },
+  "features": {
+    "title": "Tudo Que Voce Precisa",
+    "subtitle": "Ferramentas profissionais para trading algoritmico, tudo em um aplicativo desktop open-source.",
+    "charts": {
+      "title": "Graficos Avancados",
+      "description": "Renderizacao de klines de alta performance com Canvas, 25+ indicadores tecnicos, ferramentas de desenho, perfil de volume e mapa de liquidez."
+    },
+    "autoTrading": {
+      "title": "Auto-Trading",
+      "description": "Execute trades automaticamente com 105+ estrategias backtestadas, ordens OCO, gerenciamento de risco e monitoramento em tempo real via WebSocket."
+    },
+    "backtesting": {
+      "title": "Motor de Backtesting",
+      "description": "Otimizacao walk-forward, simulacao Monte Carlo, testes em lote com multiplas estrategias, simbolos e timeframes."
+    },
+    "security": {
+      "title": "Seguranca Bancaria",
+      "description": "Armazenamento criptografado AES-256-CBC para chaves API, hashing Argon2, autenticacao por sessao com 2FA opcional."
+    },
+    "exchanges": {
+      "title": "Multi-Exchange",
+      "description": "Negocie cripto na Binance e acoes americanas via Interactive Brokers — interface unificada, uma plataforma poderosa."
+    },
+    "multiLanguage": {
+      "title": "Multi-Idioma",
+      "description": "Suporte completo a internacionalizacao com Ingles, Portugues, Espanhol e Frances — troque de idioma facilmente."
+    },
+    "themes": {
+      "title": "Temas Escuro e Claro",
+      "description": "Tematizacao elegante baseada em tokens semanticos com suporte completo a modos escuro e claro em todos os componentes."
+    },
+    "openSource": {
+      "title": "100% Open Source",
+      "description": "Licenca MIT. Inspecione, modifique e contribua com todo o codigo — do frontend ao backend."
+    }
+  },
+  "screenshots": {
+    "title": "Veja em Acao",
+    "subtitle": "Uma amostra da interface do MarketMind em diferentes visualizacoes e temas.",
+    "placeholder": "Capturas em breve"
+  },
+  "techStack": {
+    "title": "Construido com Tecnologia Moderna",
+    "subtitle": "Uma stack cuidadosamente escolhida para performance, seguranca de tipos e experiencia de desenvolvimento.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "infrastructure": "Infraestrutura"
+  },
+  "stats": {
+    "title": "Em Numeros",
+    "subtitle": "Qualidade e escala em que voce pode confiar.",
+    "tests": "Testes Passando",
+    "strategies": "Estrategias de Trading",
+    "indicators": "Indicadores Tecnicos",
+    "languages": "Idiomas",
+    "exchanges": "Exchanges",
+    "version": "Versao Atual"
+  },
+  "openSource": {
+    "title": "Gratuito e Open Source",
+    "subtitle": "MarketMind tem licenca MIT e e desenvolvido abertamente. Contribuicoes sao bem-vindas.",
+    "cta": {
+      "github": "Dar Estrela no GitHub",
+      "contribute": "Contribuir"
+    },
+    "license": "Licenca MIT"
+  },
+  "footer": {
+    "description": "Assistente de trading algoritmico open-source.",
+    "links": "Links",
+    "legal": "Legal",
+    "builtBy": "Criado por",
+    "license": "Licenca MIT",
+    "privacy": "Politica de Privacidade",
+    "terms": "Termos de Servico"
+  }
+}
