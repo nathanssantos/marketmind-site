@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'MarketMind',
-  url: 'https://marketmind-site.vercel.app',
+  url: 'https://marketmind-app.vercel.app',
   github: 'https://github.com/nathanssantos/marketmind',
   author: {
     name: 'Nathan Santos',
