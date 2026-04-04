@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "MarketMind — Assistente de Trading Algoritmico",
-    "description": "Aplicativo desktop open-source com visualizacao avancada de graficos, deteccao automatica de setups, motor de backtesting e suporte multi-exchange."
+    "title": "MarketMind — Assistente de Trading Algorítmico",
+    "description": "Aplicativo desktop open-source com visualização avançada de gráficos, detecção automática de setups, motor de backtesting e suporte multi-exchange."
   },
   "nav": {
     "features": "Recursos",
@@ -11,88 +11,88 @@
   },
   "hero": {
     "badge": "Open Source",
-    "title": "Trading Algoritmico,",
+    "title": "Trading Algorítmico,",
     "titleHighlight": "Reinventado",
-    "description": "Um poderoso aplicativo desktop que combina visualizacao avancada de graficos com deteccao automatica de setups, backtesting e trading multi-exchange — feito para traders que exigem precisao.",
+    "description": "Um poderoso aplicativo desktop que combina visualização avançada de gráficos com detecção automática de setups, backtesting e trading multi-exchange — feito para traders que exigem precisão.",
     "cta": {
       "github": "Ver no GitHub",
       "download": "Download"
     }
   },
   "features": {
-    "title": "Tudo Que Voce Precisa",
-    "subtitle": "Ferramentas profissionais para trading algoritmico, tudo em um aplicativo desktop open-source.",
+    "title": "Tudo Que Você Precisa",
+    "subtitle": "Ferramentas profissionais para trading algorítmico, tudo em um aplicativo desktop open-source.",
     "charts": {
-      "title": "Graficos Avancados",
-      "description": "Renderizacao de klines de alta performance com Canvas, 25+ indicadores tecnicos, ferramentas de desenho, perfil de volume e mapa de liquidez."
+      "title": "Gráficos Avançados",
+      "description": "Renderização de klines de alta performance com Canvas, 25+ indicadores técnicos, ferramentas de desenho, perfil de volume e mapa de liquidez."
     },
     "autoTrading": {
       "title": "Auto-Trading",
-      "description": "Execute trades automaticamente com 105+ estrategias backtestadas, ordens OCO, gerenciamento de risco e monitoramento em tempo real via WebSocket."
+      "description": "Execute trades automaticamente com 105+ estratégias backtestadas, ordens OCO, gerenciamento de risco e monitoramento em tempo real via WebSocket."
     },
     "backtesting": {
       "title": "Motor de Backtesting",
-      "description": "Otimizacao walk-forward, simulacao Monte Carlo, testes em lote com multiplas estrategias, simbolos e timeframes."
+      "description": "Otimização walk-forward, simulação Monte Carlo, testes em lote com múltiplas estratégias, símbolos e timeframes."
     },
     "security": {
-      "title": "Seguranca Bancaria",
-      "description": "Armazenamento criptografado AES-256-CBC para chaves API, hashing Argon2, autenticacao por sessao com 2FA opcional."
+      "title": "Segurança Bancária",
+      "description": "Armazenamento criptografado AES-256-CBC para chaves API, hashing Argon2, autenticação por sessão com 2FA opcional."
     },
     "exchanges": {
       "title": "Multi-Exchange",
-      "description": "Negocie cripto na Binance e acoes americanas via Interactive Brokers — interface unificada, uma plataforma poderosa."
+      "description": "Negocie cripto na Binance e ações americanas via Interactive Brokers — interface unificada, uma plataforma poderosa."
     },
     "multiLanguage": {
       "title": "Multi-Idioma",
-      "description": "Suporte completo a internacionalizacao com Ingles, Portugues, Espanhol e Frances — troque de idioma facilmente."
+      "description": "Suporte completo à internacionalização com Inglês, Português, Espanhol e Francês — troque de idioma facilmente."
     },
     "themes": {
       "title": "Temas Escuro e Claro",
-      "description": "Tematizacao elegante baseada em tokens semanticos com suporte completo a modos escuro e claro em todos os componentes."
+      "description": "Tematização elegante baseada em tokens semânticos com suporte completo a modos escuro e claro em todos os componentes."
     },
     "openSource": {
       "title": "100% Open Source",
-      "description": "Licenca MIT. Inspecione, modifique e contribua com todo o codigo — do frontend ao backend."
+      "description": "Licença MIT. Inspecione, modifique e contribua com todo o código — do frontend ao backend."
     }
   },
   "screenshots": {
-    "title": "Veja em Acao",
-    "subtitle": "Uma amostra da interface do MarketMind em diferentes visualizacoes e temas.",
+    "title": "Veja em Ação",
+    "subtitle": "Uma amostra da interface do MarketMind em diferentes visualizações e temas.",
     "placeholder": "Capturas em breve"
   },
   "techStack": {
-    "title": "Construido com Tecnologia Moderna",
-    "subtitle": "Uma stack cuidadosamente escolhida para performance, seguranca de tipos e experiencia de desenvolvimento.",
+    "title": "Construído com Tecnologia Moderna",
+    "subtitle": "Uma stack cuidadosamente escolhida para performance, segurança de tipos e experiência de desenvolvimento.",
     "frontend": "Frontend",
     "backend": "Backend",
     "infrastructure": "Infraestrutura"
   },
   "stats": {
-    "title": "Em Numeros",
-    "subtitle": "Qualidade e escala em que voce pode confiar.",
+    "title": "Em Números",
+    "subtitle": "Qualidade e escala em que você pode confiar.",
     "tests": "Testes Passando",
-    "strategies": "Estrategias de Trading",
-    "indicators": "Indicadores Tecnicos",
+    "strategies": "Estratégias de Trading",
+    "indicators": "Indicadores Técnicos",
     "languages": "Idiomas",
     "exchanges": "Exchanges",
-    "version": "Versao Atual"
+    "version": "Versão Atual"
   },
   "openSource": {
     "title": "Gratuito e Open Source",
-    "subtitle": "MarketMind tem licenca MIT e e desenvolvido abertamente. Contribuicoes sao bem-vindas.",
+    "subtitle": "MarketMind tem licença MIT e é desenvolvido abertamente. Contribuições são bem-vindas.",
     "cta": {
       "github": "Dar Estrela no GitHub",
       "contribute": "Contribuir"
     },
-    "license": "Licenca MIT"
+    "license": "Licença MIT"
   },
   "footer": {
-    "description": "Assistente de trading algoritmico open-source.",
+    "description": "Assistente de trading algorítmico open-source.",
     "links": "Links",
     "legal": "Legal",
     "builtBy": "Criado por",
-    "license": "Licenca MIT",
-    "privacy": "Politica de Privacidade",
-    "terms": "Termos de Servico"
+    "license": "Licença MIT",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
   }
 }

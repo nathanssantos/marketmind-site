@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "title": "MarketMind — Asistente de Trading Algoritmico",
-    "description": "Aplicacion de escritorio open-source con visualizacion avanzada de graficos, deteccion automatica de setups, motor de backtesting y soporte multi-exchange."
+    "title": "MarketMind — Asistente de Trading Algorítmico",
+    "description": "Aplicación de escritorio open-source con visualización avanzada de gráficos, detección automática de setups, motor de backtesting y soporte multi-exchange."
   },
   "nav": {
     "features": "Funciones",
     "screenshots": "Capturas",
-    "techStack": "Tecnologias",
+    "techStack": "Tecnologías",
     "openSource": "Open Source"
   },
   "hero": {
     "badge": "Open Source",
-    "title": "Trading Algoritmico,",
+    "title": "Trading Algorítmico,",
     "titleHighlight": "Reinventado",
-    "description": "Una poderosa aplicacion de escritorio que combina visualizacion avanzada de graficos con deteccion automatica de setups, backtesting y trading multi-exchange — hecha para traders que exigen precision.",
+    "description": "Una poderosa aplicación de escritorio que combina visualización avanzada de gráficos con detección automática de setups, backtesting y trading multi-exchange — hecha para traders que exigen precisión.",
     "cta": {
       "github": "Ver en GitHub",
       "download": "Descargar"
@@ -21,61 +21,61 @@
   },
   "features": {
     "title": "Todo Lo Que Necesitas",
-    "subtitle": "Herramientas profesionales para trading algoritmico, todo en una aplicacion de escritorio open-source.",
+    "subtitle": "Herramientas profesionales para trading algorítmico, todo en una aplicación de escritorio open-source.",
     "charts": {
-      "title": "Graficos Avanzados",
-      "description": "Renderizado de klines de alto rendimiento con Canvas, 25+ indicadores tecnicos, herramientas de dibujo, perfil de volumen y mapa de liquidez."
+      "title": "Gráficos Avanzados",
+      "description": "Renderizado de klines de alto rendimiento con Canvas, 25+ indicadores técnicos, herramientas de dibujo, perfil de volumen y mapa de liquidez."
     },
     "autoTrading": {
       "title": "Auto-Trading",
-      "description": "Ejecuta trades automaticamente con 105+ estrategias backtestadas, ordenes OCO, gestion de riesgo y monitoreo en tiempo real via WebSocket."
+      "description": "Ejecuta trades automáticamente con 105+ estrategias backtestadas, órdenes OCO, gestión de riesgo y monitoreo en tiempo real vía WebSocket."
     },
     "backtesting": {
       "title": "Motor de Backtesting",
-      "description": "Optimizacion walk-forward, simulacion Monte Carlo, pruebas por lotes con multiples estrategias, simbolos y timeframes."
+      "description": "Optimización walk-forward, simulación Monte Carlo, pruebas por lotes con múltiples estrategias, símbolos y timeframes."
     },
     "security": {
       "title": "Seguridad Bancaria",
-      "description": "Almacenamiento cifrado AES-256-CBC para claves API, hashing Argon2, autenticacion por sesion con 2FA opcional."
+      "description": "Almacenamiento cifrado AES-256-CBC para claves API, hashing Argon2, autenticación por sesión con 2FA opcional."
     },
     "exchanges": {
       "title": "Multi-Exchange",
-      "description": "Opera cripto en Binance y acciones americanas via Interactive Brokers — interfaz unificada, una plataforma poderosa."
+      "description": "Opera cripto en Binance y acciones americanas vía Interactive Brokers — interfaz unificada, una plataforma poderosa."
     },
     "multiLanguage": {
       "title": "Multi-Idioma",
-      "description": "Soporte completo de internacionalizacion con Ingles, Portugues, Espanol y Frances — cambia de idioma facilmente."
+      "description": "Soporte completo de internacionalización con Inglés, Portugués, Español y Francés — cambia de idioma fácilmente."
     },
     "themes": {
       "title": "Temas Oscuro y Claro",
-      "description": "Tematizacion elegante basada en tokens semanticos con soporte completo de modos oscuro y claro en todos los componentes."
+      "description": "Tematización elegante basada en tokens semánticos con soporte completo de modos oscuro y claro en todos los componentes."
     },
     "openSource": {
       "title": "100% Open Source",
-      "description": "Licencia MIT. Inspecciona, modifica y contribuye a todo el codigo — del frontend al backend."
+      "description": "Licencia MIT. Inspecciona, modifica y contribuye a todo el código — del frontend al backend."
     }
   },
   "screenshots": {
-    "title": "Velo en Accion",
+    "title": "Vélo en Acción",
     "subtitle": "Un vistazo a la interfaz de MarketMind en diferentes vistas y temas.",
-    "placeholder": "Capturas proximamente"
+    "placeholder": "Capturas próximamente"
   },
   "techStack": {
-    "title": "Construido con Tecnologia Moderna",
+    "title": "Construido con Tecnología Moderna",
     "subtitle": "Un stack cuidadosamente elegido para rendimiento, seguridad de tipos y experiencia de desarrollo.",
     "frontend": "Frontend",
     "backend": "Backend",
     "infrastructure": "Infraestructura"
   },
   "stats": {
-    "title": "En Numeros",
+    "title": "En Números",
     "subtitle": "Calidad y escala en la que puedes confiar.",
     "tests": "Tests Pasando",
     "strategies": "Estrategias de Trading",
-    "indicators": "Indicadores Tecnicos",
+    "indicators": "Indicadores Técnicos",
     "languages": "Idiomas",
     "exchanges": "Exchanges",
-    "version": "Version Actual"
+    "version": "Versión Actual"
   },
   "openSource": {
     "title": "Gratuito y Open Source",
@@ -87,12 +87,12 @@
     "license": "Licencia MIT"
   },
   "footer": {
-    "description": "Asistente de trading algoritmico open-source.",
+    "description": "Asistente de trading algorítmico open-source.",
     "links": "Enlaces",
     "legal": "Legal",
     "builtBy": "Creado por",
     "license": "Licencia MIT",
-    "privacy": "Politica de Privacidad",
-    "terms": "Terminos de Servicio"
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
   }
 }
