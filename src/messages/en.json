@@ -24,7 +24,19 @@
     "subtitle": "Professional-grade tools for algorithmic trading, all in one open-source desktop application.",
     "charts": {
       "title": "Advanced Charts",
-      "description": "High-performance Canvas-based kline rendering with 25+ technical indicators, drawing tools, volume profile, and liquidity heatmap."
+      "description": "High-performance Canvas-based kline rendering with 25+ technical indicators, drawing tools, volume profile, and multi-timeframe views."
+    },
+    "heatmap": {
+      "title": "Liquidity Heatmap",
+      "description": "Real-time order book depth visualization with thermal overlay, bid/ask separation, and liquidation event tracking stored in TimescaleDB."
+    },
+    "orb": {
+      "title": "Opening Range Breakout",
+      "description": "Built-in ORB indicator with configurable session boundaries, breakout levels, and visual range zones rendered directly on the chart."
+    },
+    "screener": {
+      "title": "Screener & Scanners",
+      "description": "Market screener with customizable filters, real-time scanners for setup detection, and market-wide indicator dashboards."
     },
     "autoTrading": {
       "title": "Auto-Trading",
@@ -41,10 +53,6 @@
     "exchanges": {
       "title": "Multi-Exchange",
       "description": "Trade crypto on Binance and US stocks via Interactive Brokers — unified interface, one powerful platform."
-    },
-    "multiLanguage": {
-      "title": "Multi-Language",
-      "description": "Full internationalization support with English, Portuguese, Spanish, and French — switch languages seamlessly."
     },
     "themes": {
       "title": "Dark & Light Themes",

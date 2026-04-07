@@ -24,7 +24,19 @@
     "subtitle": "Des outils professionnels pour le trading algorithmique, le tout dans une application de bureau open-source.",
     "charts": {
       "title": "Graphiques Avancés",
-      "description": "Rendu de klines haute performance avec Canvas, 25+ indicateurs techniques, outils de dessin, profil de volume et carte de liquidité."
+      "description": "Rendu de klines haute performance avec Canvas, 25+ indicateurs techniques, outils de dessin, profil de volume et visualisation multi-timeframe."
+    },
+    "heatmap": {
+      "title": "Heatmap de Liquidité",
+      "description": "Visualisation en temps réel de la profondeur du carnet d'ordres avec overlay thermique, séparation bid/ask et suivi des liquidations stockés dans TimescaleDB."
+    },
+    "orb": {
+      "title": "Opening Range Breakout",
+      "description": "Indicateur ORB intégré avec limites de session configurables, niveaux de cassure et zones visuelles rendues directement sur le graphique."
+    },
+    "screener": {
+      "title": "Screener et Scanners",
+      "description": "Screener de marché avec filtres personnalisables, scanners en temps réel pour la détection de setups et tableaux de bord d'indicateurs de marché."
     },
     "autoTrading": {
       "title": "Auto-Trading",
@@ -41,10 +53,6 @@
     "exchanges": {
       "title": "Multi-Exchange",
       "description": "Tradez des cryptos sur Binance et des actions américaines via Interactive Brokers — interface unifiée, une plateforme puissante."
-    },
-    "multiLanguage": {
-      "title": "Multi-Langue",
-      "description": "Support complet d'internationalisation avec Anglais, Portugais, Espagnol et Français — changez de langue facilement."
     },
     "themes": {
       "title": "Thèmes Sombre et Clair",
