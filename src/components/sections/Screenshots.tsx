@@ -5,6 +5,8 @@ import { Container } from '@/components/ui';
 const SCREENSHOTS = [
   { src: '/images/screenshot-1.png', alt: 'MarketMind multi-timeframe chart with indicators' },
   { src: '/images/screenshot-2.png', alt: 'MarketMind weekly and monthly charts with Fibonacci' },
+  { src: '/images/screenshot-3.png', alt: 'MarketMind multi-timeframe chart with volume profile and moving averages' },
+  { src: '/images/screenshot-4.png', alt: 'MarketMind dark theme chart with trend lines and Bollinger Bands' },
 ];
 
 export const Screenshots = () => {
