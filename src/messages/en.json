@@ -54,9 +54,9 @@
       "title": "Multi-Exchange",
       "description": "Trade crypto on Binance and US stocks via Interactive Brokers — unified interface, one powerful platform."
     },
-    "themes": {
-      "title": "Dark & Light Themes",
-      "description": "Beautiful semantic token-based theming with full dark and light mode support across every component."
+    "volumeProfile": {
+      "title": "Volume Profile",
+      "description": "Price-level volume distribution with Point of Control, Value Area, and buy/sell separation — calculated from klines or real-time trade data."
     },
     "openSource": {
       "title": "100% Open Source",

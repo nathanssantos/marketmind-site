@@ -54,9 +54,9 @@
       "title": "Multi-Exchange",
       "description": "Negocie cripto na Binance e ações americanas via Interactive Brokers — interface unificada, uma plataforma poderosa."
     },
-    "themes": {
-      "title": "Temas Escuro e Claro",
-      "description": "Tematização elegante baseada em tokens semânticos com suporte completo a modos escuro e claro em todos os componentes."
+    "volumeProfile": {
+      "title": "Volume Profile",
+      "description": "Distribuição de volume por nível de preço com Point of Control, Value Area e separação compra/venda — calculado a partir de klines ou dados de trades em tempo real."
     },
     "openSource": {
       "title": "100% Open Source",
