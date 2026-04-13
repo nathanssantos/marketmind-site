@@ -24,15 +24,15 @@
     "subtitle": "Ferramentas profissionais para trading algorítmico, tudo em um aplicativo desktop open-source.",
     "charts": {
       "title": "Gráficos Avançados",
-      "description": "Renderização de klines de alta performance com Canvas, 25+ indicadores técnicos, ferramentas de desenho, perfil de volume e visualização multi-timeframe."
+      "description": "Renderização de klines de alta performance com Canvas, 35+ indicadores técnicos, ferramentas de desenho, perfil de volume e visualização multi-timeframe."
     },
     "heatmap": {
       "title": "Heatmap de Liquidez",
       "description": "Visualização em tempo real da profundidade do livro de ofertas com overlay térmico, separação bid/ask e rastreamento de liquidações armazenados no TimescaleDB."
     },
-    "orb": {
-      "title": "Opening Range Breakout",
-      "description": "Indicador ORB integrado com limites de sessão configuráveis, níveis de rompimento e zonas visuais renderizadas diretamente no gráfico."
+    "pineScript": {
+      "title": "Motor PineScript",
+      "description": "Escreva e execute estratégias em PineScript v5 — a mesma linguagem usada pelo TradingView. 106 estratégias prontas para uso, ou crie as suas."
     },
     "screener": {
       "title": "Screener e Scanners",
