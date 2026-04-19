@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Container } from '@/components/ui';
 
 const SCREENSHOTS = [
+  { src: '/images/screenshot-0.png', alt: 'MarketMind trading dashboard with multi-timeframe charts, checklist, and live portfolio' },
   { src: '/images/screenshot-1.png', alt: 'MarketMind multi-timeframe chart with indicators' },
   { src: '/images/screenshot-2.png', alt: 'MarketMind weekly and monthly charts with Fibonacci' },
   { src: '/images/screenshot-3.png', alt: 'MarketMind multi-timeframe chart with volume profile and moving averages' },
