@@ -51,8 +51,8 @@
       "description": "Armazenamento criptografado AES-256-CBC para chaves API, hashing Argon2, autenticação por sessão com 2FA opcional."
     },
     "exchanges": {
-      "title": "Multi-Exchange",
-      "description": "Negocie cripto na Binance e ações americanas via Interactive Brokers — interface unificada, uma plataforma poderosa."
+      "title": "Integração Binance",
+      "description": "Negocie cripto na Binance com integração WebSocket profunda — futuros, spot, OCO, trailing stops e streams em tempo real."
     },
     "volumeProfile": {
       "title": "Volume Profile",

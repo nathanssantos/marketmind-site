@@ -51,8 +51,8 @@
       "description": "AES-256-CBC encrypted storage for API keys, Argon2 password hashing, session-based auth with optional 2FA."
     },
     "exchanges": {
-      "title": "Multi-Exchange",
-      "description": "Trade crypto on Binance and US stocks via Interactive Brokers — unified interface, one powerful platform."
+      "title": "Binance Integration",
+      "description": "Trade crypto on Binance with deep WebSocket integration — futures, spot, OCO, trailing stops, and real-time streams."
     },
     "volumeProfile": {
       "title": "Volume Profile",

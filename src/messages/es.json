@@ -51,8 +51,8 @@
       "description": "Almacenamiento cifrado AES-256-CBC para claves API, hashing Argon2, autenticación por sesión con 2FA opcional."
     },
     "exchanges": {
-      "title": "Multi-Exchange",
-      "description": "Opera cripto en Binance y acciones americanas vía Interactive Brokers — interfaz unificada, una plataforma poderosa."
+      "title": "Integración Binance",
+      "description": "Opera cripto en Binance con integración WebSocket profunda — futuros, spot, OCO, trailing stops y streams en tiempo real."
     },
     "volumeProfile": {
       "title": "Volume Profile",

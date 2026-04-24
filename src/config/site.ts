@@ -18,7 +18,7 @@ export const siteConfig = {
     strategies: '106',
     indicators: '35+',
     languages: '4',
-    exchanges: '2',
-    version: 'v0.98.1',
+    exchanges: '1',
+    version: 'v0.98.2',
   },
 } as const;

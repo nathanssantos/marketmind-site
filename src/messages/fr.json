@@ -51,8 +51,8 @@
       "description": "Stockage chiffré AES-256-CBC pour les clés API, hachage Argon2, authentification par session avec 2FA optionnel."
     },
     "exchanges": {
-      "title": "Multi-Exchange",
-      "description": "Tradez des cryptos sur Binance et des actions américaines via Interactive Brokers — interface unifiée, une plateforme puissante."
+      "title": "Intégration Binance",
+      "description": "Tradez des cryptos sur Binance avec une intégration WebSocket approfondie — futures, spot, OCO, trailing stops et flux en temps réel."
     },
     "volumeProfile": {
       "title": "Volume Profile",
