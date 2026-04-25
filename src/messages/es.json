@@ -35,8 +35,8 @@
       "description": "Escribe y ejecuta estrategias en PineScript v5 — el mismo lenguaje usado por TradingView. 106 estrategias listas para usar, o crea las tuyas."
     },
     "screener": {
-      "title": "Screener y Scanners",
-      "description": "Screener de mercado con filtros personalizables, scanners en tiempo real para detección de setups y dashboards de indicadores de mercado."
+      "title": "Screener y Scanners (beta)",
+      "description": "Screener de mercado con filtros personalizables, scanners en tiempo real para detección de setups y dashboards de indicadores de mercado. Actualmente en beta."
     },
     "autoTrading": {
       "title": "Auto-Trading",
