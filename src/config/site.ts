@@ -14,11 +14,11 @@ export const siteConfig = {
     { key: 'openSource', href: '#open-source' },
   ],
   stats: {
-    tests: '8,000+',
+    tests: '8,500+',
     strategies: '106',
     indicators: '35+',
     languages: '4',
     exchanges: '1',
-    version: 'v1.0.0',
+    version: 'v1.1.0',
   },
 } as const;
