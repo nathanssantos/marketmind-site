@@ -54,9 +54,9 @@
       "title": "Integración Binance",
       "description": "Opera cripto en Binance con integración WebSocket profunda — futuros, spot, OCO, trailing stops y streams en tiempo real."
     },
-    "volumeProfile": {
-      "title": "Volume Profile",
-      "description": "Distribución de volumen por nivel de precio con Point of Control, Value Area y separación compra/venta — calculado desde klines o datos de trades en tiempo real."
+    "mcp": {
+      "title": "Pensado para agentes de IA",
+      "description": "Cuatro servidores Model Context Protocol exponen 47 herramientas — controla la app, consulta la base de datos, corre backtests y captura screenshots directamente desde Claude Code, ChatGPT o cualquier cliente MCP."
     },
     "openSource": {
       "title": "100% Open Source",
