@@ -19,6 +19,6 @@ export const siteConfig = {
     indicators: '35+',
     languages: '4',
     exchanges: '1',
-    version: 'v1.11.3',
+    version: 'v1.11.4',
   },
 } as const;
