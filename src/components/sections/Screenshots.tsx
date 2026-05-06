@@ -10,6 +10,8 @@ const SCREENSHOTS = [
   { src: '/images/screenshot-4.png', alt: 'MarketMind Auto-Scalping layout with order flow metrics and session P&L' },
   { src: '/images/screenshot-5.png', alt: 'MarketMind Trading Profiles modal — RSI 2 + Stoch 14 multi-timeframe checklist editor' },
   { src: '/images/screenshot-6.png', alt: 'MarketMind Market Indicators dashboard — Fear & Greed, BTC Dominance, MVRV, Funding Rates, ADX' },
+  { src: '/images/screenshot-7.png', alt: 'MarketMind chart with a Fibonacci retracement on BTCUSDT 1h, levels labeled 0% / 23.6% / 38.2% / 50% / 61.8% / 100%' },
+  { src: '/images/screenshot-8.png', alt: 'MarketMind Wallets dialog with paper-trading wallets, balances, initial balances, and net P&L percentages' },
 ];
 
 export const Screenshots = () => {
