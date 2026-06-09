@@ -24,6 +24,7 @@ export async function generateMetadata({
     title: messages.metadata.title,
     description: messages.metadata.description,
     metadataBase: new URL(siteConfig.url),
+    authors: [{ name: 'Nathan Santos' }],
     openGraph: {
       title: messages.metadata.title,
       description: messages.metadata.description,
@@ -31,11 +32,20 @@ export async function generateMetadata({
       siteName: siteConfig.name,
       locale,
       type: 'website',
+      images: [
+        {
+          url: '/images/screenshot-0.png',
+          width: 3840,
+          height: 2160,
+          alt: 'MarketMind — algorithmic trading platform',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: messages.metadata.title,
       description: messages.metadata.description,
+      images: ['/images/screenshot-0.png'],
     },
     icons: {
       icon: '/images/favicon.ico',
