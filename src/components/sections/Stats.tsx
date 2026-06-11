@@ -7,7 +7,6 @@ const STAT_KEYS = [
   'strategies',
   'indicators',
   'languages',
-  'exchanges',
   'version',
 ] as const;
 
@@ -23,7 +22,7 @@ export const Stats = () => {
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">{t('subtitle')}</p>
         </div>
-        <div className="mx-auto grid max-w-4xl grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mx-auto grid max-w-4xl grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
           {STAT_KEYS.map((key) => (
             <div key={key} className="text-center">
               <div className="mb-1 text-3xl font-bold text-gray-900 dark:text-white">
