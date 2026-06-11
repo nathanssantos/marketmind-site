@@ -11,6 +11,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Tailwind v4's Preflight no longer sets cursor:pointer on buttons. Restore it
+   for every interactive element so all clickables show the pointer cursor. */
+button:not(:disabled),
+[role='button'],
+[role='menuitem'],
+[role='tab'],
+[role='switch'],
+label[for],
+summary,
+a[href],
+select {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
