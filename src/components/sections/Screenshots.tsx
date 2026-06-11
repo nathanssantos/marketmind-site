@@ -14,6 +14,7 @@ const SCREENSHOTS = [
   { src: '/images/screenshot-9.png', alt: 'MarketMind trading dashboard (15m / 1h / 4h) in light theme with multi-timeframe charts, Confluence scoring, and active positions' },
   { src: '/images/screenshot-10.png', alt: 'MarketMind Market Indicators dashboard in light theme — Fear & Greed, BTC Dominance, MVRV Ratio, Altcoin Season, ADX, Order Book' },
   { src: '/images/screenshot-11.png', alt: 'MarketMind swing trading layout (1h / 4h / 1d) with the Classic black-and-white chart palette' },
+  { src: '/images/screenshot-12.png', alt: 'MarketMind Settings dialog — Chart tab with color palette options (TradingView, Classic B&W, Binance), chart type, and grid configuration' },
 ];
 
 export const Screenshots = () => {
