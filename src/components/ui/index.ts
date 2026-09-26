@@ -4,3 +4,4 @@ export { Card } from './Card';
 export { Container } from './Container';
 export { ThemeToggle } from './ThemeToggle';
 export { LanguageSwitcher } from './LanguageSwitcher';
+export { GithubIcon } from './GithubIcon';

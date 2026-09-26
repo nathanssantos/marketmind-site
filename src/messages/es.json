@@ -1,106 +1,269 @@
 {
   "metadata": {
-    "title": "MarketMind — Asistente de Trading Algorítmico",
-    "description": "Aplicación de escritorio open-source con visualización avanzada de gráficos, detección automática de setups, motor de backtesting y soporte multi-exchange."
+    "title": "MarketMind — Estación de trading de código abierto para Binance",
+    "description": "App de escritorio para analizar gráficos, hacer backtests y operar cripto en automático en Binance. 107 estrategias en Pine Script, billeteras de práctica, límites de riesgo que tú defines y un puente MCP para agentes de IA. Se ejecuta en tu propia máquina."
   },
   "nav": {
     "features": "Funciones",
     "screenshots": "Capturas",
-    "techStack": "Tecnologías",
-    "openSource": "Open Source"
+    "agents": "Agentes de IA",
+    "getStarted": "Cómo empezar",
+    "openSource": "Código abierto"
   },
   "hero": {
-    "badge": "Open Source",
-    "title": "Trading Algorítmico,",
-    "titleHighlight": "Reinventado",
-    "description": "Una poderosa aplicación de escritorio que combina visualización avanzada de gráficos con detección automática de setups, backtesting y trading multi-exchange — hecha para traders que exigen precisión.",
+    "badge": "Código abierto · MIT",
+    "title": "Analiza gráficos, haz backtests y automatiza tu trading de cripto",
+    "titleHighlight": "desde tu propio escritorio.",
+    "description": "MarketMind es una estación de trading de escritorio para spot y futuros de Binance. Incluye gráficos en varias temporalidades, 107 estrategias en Pine Script, un motor de backtesting, trading automático con límites de riesgo que tú defines, billeteras de práctica y un puente MCP para agentes de IA. El backend y la base de datos se ejecutan en tu máquina, así que tus claves de API nunca salen de ella.",
     "cta": {
-      "github": "Ver en GitHub",
-      "download": "Descargar"
+      "download": "Descargar para macOS o Windows",
+      "github": "Ver en GitHub"
+    },
+    "platforms": "macOS (Apple Silicon e Intel) · Windows · licencia MIT"
+  },
+  "workflow": {
+    "title": "Del gráfico a la ejecución, en una sola app",
+    "subtitle": "Los setups que ves en el gráfico son los mismos que usan el screener, los backtests y el trading automático.",
+    "steps": {
+      "chart": {
+        "title": "Observa",
+        "description": "Abre un símbolo en varias temporalidades a la vez. Añade indicadores, el perfil de volumen, el mapa de calor de liquidez y dibujos, y opera directamente desde el gráfico."
+      },
+      "detect": {
+        "title": "Detecta",
+        "description": "Activa estrategias y MarketMind marca los setups en el gráfico a medida que cierran las velas. La escalera de confluencia puntúa cada entrada en varias temporalidades antes de dispararla."
+      },
+      "backtest": {
+        "title": "Valida",
+        "description": "Ejecuta las mismas estrategias sobre años de velas guardadas, con comisiones, filtros y límites de posiciones. Compara los números antes de arriesgar nada."
+      },
+      "trade": {
+        "title": "Automatiza",
+        "description": "Inicia watchers (monitores automáticos) en los símbolos y temporalidades en los que confías. Los perfiles de trading definen el tamaño de posición, los stops, los objetivos y los filtros. Un solo botón lo detiene todo."
+      }
     }
   },
   "features": {
-    "title": "Todo Lo Que Necesitas",
-    "subtitle": "Herramientas profesionales para trading algorítmico, todo en una aplicación de escritorio open-source.",
-    "charts": {
-      "title": "Gráficos Avanzados",
-      "description": "Renderizado de klines de alto rendimiento con Canvas, 35+ indicadores técnicos, herramientas de dibujo, perfil de volumen y visualización multi-timeframe."
+    "title": "Qué incluye",
+    "subtitle": "Todo lo que ves abajo ya viene en la app. Las funciones en beta están marcadas.",
+    "groups": {
+      "charting": "Gráficos",
+      "strategies": "Estrategias y backtesting",
+      "execution": "Ejecución y riesgo",
+      "market": "Datos de mercado y plataforma"
     },
-    "heatmap": {
-      "title": "Heatmap de Liquidez",
-      "description": "Visualización en tiempo real de la profundidad del libro de órdenes con overlay térmico, separación bid/ask y seguimiento de liquidaciones almacenados en TimescaleDB."
-    },
-    "pineScript": {
-      "title": "Motor PineScript",
-      "description": "Escribe y ejecuta estrategias en PineScript v5 — el mismo lenguaje usado por TradingView. 106 estrategias listas para usar, o crea las tuyas."
-    },
-    "screener": {
-      "title": "Screener y Scanners (beta)",
-      "description": "Screener de mercado con filtros personalizables, scanners en tiempo real para detección de setups y dashboards de indicadores de mercado. Actualmente en beta."
-    },
-    "autoTrading": {
-      "title": "Auto-Trading",
-      "description": "Ejecuta trades automáticamente con 105+ estrategias backtestadas, órdenes OCO, gestión de riesgo y monitoreo en tiempo real vía WebSocket."
-    },
-    "backtesting": {
-      "title": "Motor de Backtesting",
-      "description": "Optimización walk-forward, simulación Monte Carlo, pruebas por lotes con múltiples estrategias, símbolos y timeframes."
-    },
-    "security": {
-      "title": "Seguridad Bancaria",
-      "description": "Almacenamiento cifrado AES-256-CBC para claves API, hashing Argon2, autenticación por sesión con 2FA opcional."
-    },
-    "exchanges": {
-      "title": "Integración Binance",
-      "description": "Opera cripto en Binance con integración WebSocket profunda — futuros, spot, OCO, trailing stops y streams en tiempo real."
-    },
-    "mcp": {
-      "title": "Pensado para agentes de IA",
-      "description": "Cuatro servidores Model Context Protocol exponen 47 herramientas — controla la app, consulta la base de datos, corre backtests y captura screenshots directamente desde Claude Code, ChatGPT o cualquier cliente MCP."
-    },
-    "openSource": {
-      "title": "100% Open Source",
-      "description": "Licencia MIT. Inspecciona, modifica y contribuye a todo el código — del frontend al backend."
+    "items": {
+      "layouts": {
+        "title": "Diseños multitemporalidad",
+        "description": "Mira el mismo símbolo en 1m, 5m y 15m, o en 1h, 4h y 1d, lado a lado, entre 16 temporalidades que van de un minuto a un año. Los diseños predefinidos reúnen gráficos, el ticket de órdenes, las posiciones, el libro de órdenes y las métricas en paneles redimensionables. Cualquier gráfico se puede separar en su propia ventana."
+      },
+      "indicators": {
+        "title": "45+ indicadores, 20 herramientas de dibujo",
+        "description": "Medias móviles, RSI, MACD, Bollinger, Ichimoku, SuperTrend, VWAP y más, además de perfil de volumen, mapa de calor de liquidez, ruptura del rango de apertura y fair value gaps. Fibonacci, pitchfork, canales, posiciones largas y cortas y las líneas de siempre, que se guardan y admiten deshacer y rehacer. 25 patrones de velas, o define los tuyos."
+      },
+      "liveData": {
+        "title": "Datos en vivo que no se detienen",
+        "description": "Las velas llegan en tiempo real desde Binance y se guardan localmente en PostgreSQL, con historial desde 2017 para spot y desde 2019 para futuros. Un watchdog reconecta los flujos que se quedan en silencio. Si se pierde un cierre, el gráfico abre la siguiente vela por su cuenta. Los huecos del historial se reparan solos."
+      },
+      "strategies": {
+        "title": "107 estrategias en Pine Script",
+        "description": "Rupturas, pullbacks, divergencias, reversión a la media y momentum, escritas en Pine Script v5 y ejecutadas por un motor Pine en el backend. Ajusta los parámetros de cada estrategia o añade tu propio archivo .pine a la carpeta de estrategias."
+      },
+      "confluence": {
+        "title": "Escalera de confluencia",
+        "description": "En cada perfil de trading, define las condiciones que debe cumplir una entrada: indicador, umbral, temporalidad, obligatoria o preferida. Todas las condiciones obligatorias deben cumplirse y valen el doble. La puntuación se actualiza en vivo junto al gráfico."
+      },
+      "backtesting": {
+        "title": "Motor de backtesting",
+        "description": "En la app, ejecuta cualquier estrategia en un símbolo y una temporalidad sobre el historial guardado, con comisiones taker, filtros de tendencia, correlación y régimen, y un límite de posiciones simultáneas. Desde la línea de comandos: ejecuciones por lotes con varias estrategias, símbolos y temporalidades, walk-forward y Monte Carlo."
+      },
+      "autoTrading": {
+        "title": "Trading automático con watchers",
+        "description": "Un watcher sigue un símbolo en una temporalidad y abre una operación cuando un setup cumple su perfil, o solo la sugiere en el modo semiasistido. Rota símbolos según su puntuación de oportunidad, inicia los 20 mejores con un clic y detenlos todos con un botón. Un modo de auto-scalping (beta) ejecuta estrategias de order flow en el gráfico de 1m."
+      },
+      "risk": {
+        "title": "Controles de riesgo que tú defines",
+        "description": "Objetivos y stops por Fibonacci o por swings, relación riesgo/beneficio mínima, riesgo máximo por stop, límite de pérdida diaria y de drawdown máximo, filtros de temporalidad superior y de correlación con BTC, trailing stops y avisos de liquidación en las posiciones abiertas. El apalancamiento y el tipo de margen los eliges tú."
+      },
+      "trading": {
+        "title": "Primero en práctica, en real cuando estés listo",
+        "description": "Las billeteras de práctica simulan ejecuciones y comisiones con el mismo flujo que una billetera real o de testnet de Binance. Las analíticas de cada billetera muestran el rendimiento, un calendario de P&L diario y una curva de capital que ignora depósitos y retiros."
+      },
+      "marketContext": {
+        "title": "Panel de contexto de mercado",
+        "description": "Fear & Greed, dominancia de BTC, MVRV, costo de producción, interés abierto, ratio long/short, altcoin season, fuerza de tendencia ADX, presión del libro de órdenes y tasas de financiación, cada uno en su propio panel."
+      },
+      "screener": {
+        "title": "Screener y símbolos personalizados (beta)",
+        "description": "Escanea todos los símbolos con 13 filtros predefinidos, como tendencia alcista en sobreventa, pico de volumen o candidatos a ruptura, o crea filtros sobre 32 campos y guárdalos. Combina varios símbolos en índices personalizados con agregación ponderada y ábrelos en el gráfico como cualquier par."
+      },
+      "local": {
+        "title": "Se ejecuta en tu máquina",
+        "description": "La app de escritorio se comunica con un backend y una base de datos PostgreSQL que ejecutas localmente. Las claves de API se guardan cifradas con AES-256 y nunca salen de tu equipo. Sin cuenta con nosotros, sin nube."
+      }
     }
   },
   "screenshots": {
-    "title": "Vélo en Acción",
-    "subtitle": "Un vistazo a la interfaz de MarketMind en diferentes vistas y temas.",
-    "placeholder": "Capturas próximamente"
+    "title": "La app, en funcionamiento",
+    "subtitle": "Diseños reales capturados en la app con billeteras de práctica de ejemplo. Temas oscuro y claro, cinco paletas de gráficos.",
+    "items": {
+      "dashboard": {
+        "title": "Panel de trading · 15m / 1h / 4h",
+        "caption": "Tres temporalidades de futuros de BTCUSDT, el ticket de órdenes con SL/TP, la exposición de la billetera y la escalera de confluencia.",
+        "alt": "Panel de trading de MarketMind con gráficos de BTCUSDT en 15m, 1h y 4h, ticket de órdenes, panel de exposición de la billetera y escalera de confluencia"
+      },
+      "scalping": {
+        "title": "Scalping · 1m / 5m / 15m",
+        "caption": "Temporalidades rápidas con EMA, volumen y la escalera de confluencia para las entradas.",
+        "alt": "Diseño de scalping de MarketMind con gráficos de 1m, 5m y 15m, EMA, volumen y la escalera de confluencia"
+      },
+      "swing": {
+        "title": "Swing · 1h / 4h / 1d",
+        "caption": "Temporalidades mayores para posiciones que duran días, con las mismas herramientas.",
+        "alt": "Diseño swing de MarketMind con gráficos de 1h, 4h y 1d"
+      },
+      "autoTrading": {
+        "title": "Diseño de trading automático",
+        "caption": "Watchers activos en BTC, ETH y SOL, tamaño de posición por operación y un botón para detener todo junto a los gráficos.",
+        "alt": "Diseño de trading automático de MarketMind con la lista de watchers activos, el control deslizante de tamaño de posición y el botón para detener todo"
+      },
+      "autoScalping": {
+        "title": "Diseño de auto-scalping",
+        "caption": "Escalera del libro de órdenes y métricas de order flow: CVD, desequilibrio, spread, absorción, microprecio y agotamiento.",
+        "alt": "Diseño de auto-scalping de MarketMind con la escalera del libro de órdenes, métricas de order flow y P&L de la sesión"
+      },
+      "autoTradingDialog": {
+        "title": "Ventana de trading automático",
+        "caption": "Perfiles de trading con setups activados y límites de operaciones simultáneas, parada de emergencia, watchers y rotación dinámica de símbolos.",
+        "alt": "Ventana de trading automático de MarketMind con perfiles de trading, parada de emergencia, watchers activos y selección dinámica de símbolos"
+      },
+      "marketIndicators": {
+        "title": "Indicadores de mercado",
+        "caption": "Diez paneles de contexto de mercado en un solo diseño, desde Fear & Greed hasta las tasas de financiación.",
+        "alt": "Diseño de indicadores de mercado de MarketMind con paneles de Fear & Greed, dominancia de BTC, MVRV, costo de producción, interés abierto, ratio long/short, altcoin season, ADX, presión del libro de órdenes y tasas de financiación"
+      },
+      "wallets": {
+        "title": "Billeteras",
+        "caption": "Billeteras de práctica con saldo, comisiones y P&L neto, junto a billeteras reales o de testnet de Binance.",
+        "alt": "Ventana de billeteras de MarketMind con dos billeteras de práctica que muestran saldo, saldo inicial, bruto, comisiones y P&L neto"
+      },
+      "settingsChart": {
+        "title": "Configuración del gráfico",
+        "caption": "Tipo de gráfico, opciones de visualización, cinco paletas de colores y dimensiones del gráfico.",
+        "alt": "Ventana de configuración de MarketMind en la pestaña Gráfico con opciones de visualización, paletas de colores y dimensiones del gráfico"
+      },
+      "dashboardLight": {
+        "title": "Tema claro",
+        "caption": "El mismo panel de trading en el tema claro.",
+        "alt": "Panel de trading de MarketMind en el tema claro"
+      },
+      "marketIndicatorsLight": {
+        "title": "Indicadores de mercado · tema claro",
+        "caption": "Los paneles de contexto de mercado en el tema claro.",
+        "alt": "Diseño de indicadores de mercado de MarketMind en el tema claro"
+      },
+      "classicPalette": {
+        "title": "Paleta clásica en blanco y negro",
+        "caption": "El diseño swing con la paleta de gráfico Classic B&W.",
+        "alt": "Diseño swing de MarketMind con la paleta de gráfico clásica en blanco y negro"
+      }
+    }
+  },
+  "agents": {
+    "title": "Hecho también para agentes de IA",
+    "subtitle": "Cinco servidores Model Context Protocol exponen la app, la base de datos, las estrategias y la ejecución de operaciones a Claude Code, ChatGPT de escritorio o cualquier cliente MCP.",
+    "toolCount": "{count} herramientas",
+    "servers": {
+      "app": {
+        "name": "@marketmind/mcp-app",
+        "description": "Controla la app en ejecución: navega entre símbolos, cambia temporalidades y tipos de gráfico, activa o desactiva indicadores, abre ventanas y cambia de tema."
+      },
+      "backend": {
+        "name": "@marketmind/mcp-backend",
+        "description": "Acceso de solo lectura a billeteras, órdenes, ejecuciones, setups, watchers y velas, además de un puente tRPC y el registro de auditoría."
+      },
+      "strategy": {
+        "name": "@marketmind/mcp-strategy",
+        "description": "Lista, crea, compara y exporta estrategias Pine, ejecuta backtests y consulta sus resultados."
+      },
+      "trading": {
+        "name": "@marketmind/mcp-trading",
+        "description": "Coloca y cancela órdenes, define stop loss y take profit, cierra posiciones y consulta el estado de la billetera, solo en billeteras de práctica."
+      },
+      "screenshot": {
+        "name": "@marketmind/mcp-screenshot",
+        "description": "Captura cualquier pestaña, ventana o barra lateral en tema claro y oscuro, con galerías lado a lado para revisiones visuales."
+      }
+    },
+    "safety": {
+      "title": "La escritura está restringida",
+      "description": "Los agentes pueden leerlo todo. La ejecución de operaciones viene desactivada por defecto y se activa por billetera. Solo funciona con billeteras de práctica y hasta 30 escrituras por hora. Cada llamada queda en un registro de auditoría que puedes revisar en Configuración."
+    },
+    "cta": "Leer la documentación de MCP"
+  },
+  "getStarted": {
+    "title": "Cómo empezar",
+    "subtitle": "Tres pasos. Todo se ejecuta en local.",
+    "steps": {
+      "download": {
+        "title": "Instala la app de escritorio",
+        "description": "Descarga el DMG para macOS o el instalador para Windows desde GitHub Releases. La versión de macOS aún no está notarizada, así que debes permitirla una vez en Ajustes del Sistema. Las siguientes actualizaciones llegan a través de la app."
+      },
+      "backend": {
+        "title": "Inicia el backend",
+        "description": "Clona el repositorio, inicia PostgreSQL con Docker Compose y ejecuta el backend. La guía de inicio rápido te lleva paso a paso en cinco minutos."
+      },
+      "connect": {
+        "title": "Conecta una billetera",
+        "description": "Crea una billetera de práctica para operar con dinero simulado, o añade claves de API de Binance. Las claves se guardan cifradas y solo en tu equipo. Las órdenes reales siguen desactivadas hasta que las actives en la configuración del backend."
+      }
+    },
+    "requirements": {
+      "label": "Requisitos",
+      "macos": "macOS 10.15+",
+      "windows": "Windows 10+",
+      "node": "Node.js 24 y pnpm para el backend",
+      "docker": "Docker para la base de datos",
+      "binance": "Cuenta de Binance para operar en real"
+    },
+    "cta": {
+      "download": "Descargar",
+      "quickStart": "Guía de inicio rápido"
+    }
+  },
+  "stats": {
+    "title": "En números",
+    "subtitle": "Datos tomados del repositorio en cada versión.",
+    "strategies": "Estrategias incluidas",
+    "indicators": "Indicadores técnicos",
+    "mcpTools": "Herramientas MCP",
+    "tests": "Pruebas automatizadas",
+    "languages": "Idiomas",
+    "version": "Versión actual"
   },
   "techStack": {
-    "title": "Construido con Tecnología Moderna",
-    "subtitle": "Un stack cuidadosamente elegido para rendimiento, seguridad de tipos y experiencia de desarrollo.",
+    "title": "Por dentro",
+    "subtitle": "TypeScript de principio a fin: una app Electron, un backend Fastify y PostgreSQL para el historial de velas.",
     "frontend": "Frontend",
     "backend": "Backend",
     "infrastructure": "Infraestructura"
   },
-  "stats": {
-    "title": "En Números",
-    "subtitle": "Calidad y escala en la que puedes confiar.",
-    "tests": "Tests Pasando",
-    "strategies": "Estrategias de Trading",
-    "indicators": "Indicadores Técnicos",
-    "languages": "Idiomas",
-    "exchanges": "Exchanges",
-    "version": "Versión Actual"
-  },
   "openSource": {
-    "title": "Gratuito y Open Source",
-    "subtitle": "MarketMind tiene licencia MIT y se desarrolla abiertamente. Las contribuciones son bienvenidas.",
+    "title": "Gratuito y de código abierto",
+    "subtitle": "Con licencia MIT y desarrollado en abierto. Lee el código, abre un issue o envía un pull request.",
     "cta": {
-      "github": "Dar Estrella en GitHub",
+      "github": "Dale una estrella en GitHub",
       "contribute": "Contribuir"
     },
     "license": "Licencia MIT"
   },
   "footer": {
-    "description": "Asistente de trading algorítmico open-source.",
+    "description": "Estación de trading de código abierto para Binance. Se ejecuta en tu máquina.",
     "links": "Enlaces",
     "legal": "Legal",
+    "quickStart": "Inicio rápido",
     "builtBy": "Creado por",
     "license": "Licencia MIT",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Servicio"
+    "disclaimer": "MarketMind es software, no asesoramiento financiero. Operar con criptomonedas y derivados conlleva un riesgo sustancial de pérdidas, y los resultados de un backtest no garantizan rendimientos futuros. Eres responsable de tus operaciones y de tus claves de API."
   }
 }

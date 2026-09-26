@@ -66,7 +66,7 @@ export const OpenSource = () => {
               </Button>
             </a>
             <a
-              href={`${siteConfig.github}/blob/main/CONTRIBUTING.md`}
+              href={siteConfig.docs.contributing}
               target="_blank"
               rel="noopener noreferrer"
             >
