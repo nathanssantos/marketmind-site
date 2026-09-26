@@ -44,7 +44,7 @@
     }
   },
   "features": {
-    "title": "Ce que contient l'application",
+    "title": "Ce que fait l'application",
     "subtitle": "Tout ce qui suit est déjà disponible dans l'application. Les fonctionnalités en bêta sont signalées.",
     "groups": {
       "charting": "Graphiques",
