@@ -27,7 +27,7 @@ export const siteConfig = {
     mcpTools: '57',
     tests: '8,500+',
     languages: '4',
-    version: 'v1.27.0',
+    version: 'v1.28.0',
   },
   mcpServers: [
     { key: 'app', tools: 19 },
