@@ -14,7 +14,7 @@
     "badge": "Open source · MIT",
     "title": "Chart, backtest and auto-trade crypto",
     "titleHighlight": "from your own desktop.",
-    "description": "MarketMind is a desktop trading workstation for Binance spot and futures. Multi-timeframe charts, 107 Pine Script strategies, a backtesting engine, auto-trading with risk limits you set, paper wallets and an MCP bridge for AI agents. The backend and the database run on your machine, so your API keys never leave it.",
+    "description": "MarketMind is a desktop trading workstation for Binance spot and futures. Multi-timeframe charts, 107 Pine Script strategies, a backtesting engine, auto-trading with risk limits you set, paper wallets and an MCP bridge for AI agents. The trading engine and its database ship inside the app, so nothing is deployed anywhere and your API keys never leave your computer.",
     "cta": {
       "download": "Download for macOS or Windows",
       "github": "View on GitHub"
@@ -99,7 +99,7 @@
       },
       "local": {
         "title": "Runs on your machine",
-        "description": "The desktop app talks to a backend and a PostgreSQL database that you run locally. API keys are encrypted at rest with AES-256 and never leave your computer. No account with us, no cloud."
+        "description": "The app includes its own trading engine and PostgreSQL database and starts both when you open it. API keys are encrypted at rest with AES-256 and never leave your computer. No account with us, no cloud, nothing to deploy."
       }
     }
   },
@@ -203,27 +203,25 @@
   },
   "getStarted": {
     "title": "Get started",
-    "subtitle": "Three steps. Everything runs locally.",
+    "subtitle": "Three steps. Everything runs on your computer.",
     "steps": {
       "download": {
         "title": "Install the desktop app",
         "description": "Download the DMG for macOS or the installer for Windows from GitHub Releases. The macOS build is not notarized yet, so allow it once in System Settings. Later updates arrive through the app."
       },
-      "backend": {
-        "title": "Start the backend",
-        "description": "Clone the repository, start PostgreSQL with Docker Compose and run the backend. The quick start guide walks through it in five minutes."
+      "firstRun": {
+        "title": "Open it",
+        "description": "On first launch MarketMind sets up its database and starts its trading engine on your machine. Create your local account; it lives only on this computer."
       },
       "connect": {
         "title": "Connect a wallet",
-        "description": "Create a paper wallet to trade with simulated money, or add Binance API keys. Keys are encrypted and stored only on your computer, and live orders stay off until you enable them in the backend settings."
+        "description": "Create a paper wallet to trade with simulated money, or add Binance API keys. Keys are encrypted and stored only on your computer, and live orders stay off until you enable them."
       }
     },
     "requirements": {
       "label": "Requirements",
       "macos": "macOS 10.15+",
       "windows": "Windows 10+",
-      "node": "Node.js 24 and pnpm for the backend",
-      "docker": "Docker for the database",
       "binance": "Binance account for live trading"
     },
     "cta": {

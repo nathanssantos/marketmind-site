@@ -1,16 +1,16 @@
 import { useTranslations } from 'next-intl';
-import { Download, Container as ContainerIcon, KeyRound } from 'lucide-react';
+import { Download, KeyRound, Play } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { siteConfig } from '@/config/site';
 import { Badge, Button, Container } from '@/components/ui';
 
 const STEPS: { key: string; icon: LucideIcon }[] = [
   { key: 'download', icon: Download },
-  { key: 'backend', icon: ContainerIcon },
+  { key: 'firstRun', icon: Play },
   { key: 'connect', icon: KeyRound },
 ];
 
-const REQUIREMENT_KEYS = ['macos', 'windows', 'node', 'docker', 'binance'] as const;
+const REQUIREMENT_KEYS = ['macos', 'windows', 'binance'] as const;
 
 export const GetStarted = () => {
   const t = useTranslations('getStarted');

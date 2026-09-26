@@ -14,7 +14,7 @@
     "badge": "Open source · MIT",
     "title": "Gráficos, backtest e auto-trading de cripto",
     "titleHighlight": "no seu próprio desktop.",
-    "description": "O MarketMind é uma estação de trading desktop para spot e futuros da Binance. Gráficos em vários timeframes, 107 estratégias em Pine Script, motor de backtesting, auto-trading com limites de risco definidos por você, carteiras paper e uma ponte MCP para agentes de IA. O backend e o banco de dados rodam na sua máquina, então suas chaves de API nunca saem dela.",
+    "description": "O MarketMind é uma estação de trading desktop para spot e futuros da Binance. Gráficos em vários timeframes, 107 estratégias em Pine Script, motor de backtesting, auto-trading com limites de risco definidos por você, carteiras paper e uma ponte MCP para agentes de IA. O motor de trading e o banco de dados vêm dentro do app, então nada é publicado em lugar nenhum e suas chaves de API nunca saem do seu computador.",
     "cta": {
       "download": "Baixar para macOS ou Windows",
       "github": "Ver no GitHub"
@@ -99,7 +99,7 @@
       },
       "local": {
         "title": "Roda na sua máquina",
-        "description": "O app desktop conversa com um backend e um banco PostgreSQL que rodam localmente. As chaves de API ficam criptografadas com AES-256 e nunca saem do seu computador. Sem conta conosco, sem nuvem."
+        "description": "O app inclui o próprio motor de trading e um banco PostgreSQL, e sobe os dois quando você o abre. As chaves de API ficam criptografadas com AES-256 e nunca saem do seu computador. Sem conta conosco, sem nuvem, nada para publicar."
       }
     }
   },
@@ -203,27 +203,25 @@
   },
   "getStarted": {
     "title": "Como começar",
-    "subtitle": "Três passos. Tudo roda localmente.",
+    "subtitle": "Três passos. Tudo roda no seu computador.",
     "steps": {
       "download": {
         "title": "Instale o app desktop",
         "description": "Baixe o DMG para macOS ou o instalador para Windows nas Releases do GitHub. A build para macOS ainda não é notarizada, então libere o app uma vez nos Ajustes do Sistema. As próximas atualizações chegam pelo próprio app."
       },
-      "backend": {
-        "title": "Suba o backend",
-        "description": "Clone o repositório, suba o PostgreSQL com Docker Compose e rode o backend. O guia de início rápido percorre tudo em cinco minutos."
+      "firstRun": {
+        "title": "Abra o app",
+        "description": "Na primeira abertura, o MarketMind prepara o banco de dados e sobe o motor de trading na sua máquina. Crie sua conta local; ela existe só neste computador."
       },
       "connect": {
         "title": "Conecte uma carteira",
-        "description": "Crie uma carteira paper para operar com dinheiro simulado, ou adicione chaves de API da Binance. As chaves ficam criptografadas e guardadas só no seu computador, e as ordens reais ficam desligadas até você ativá-las nas configurações do backend."
+        "description": "Crie uma carteira paper para operar com dinheiro simulado, ou adicione chaves de API da Binance. As chaves ficam criptografadas e guardadas só no seu computador, e as ordens reais ficam desligadas até você ativá-las."
       }
     },
     "requirements": {
       "label": "Requisitos",
       "macos": "macOS 10.15+",
       "windows": "Windows 10+",
-      "node": "Node.js 24 e pnpm para o backend",
-      "docker": "Docker para o banco de dados",
       "binance": "Conta na Binance para operar ao vivo"
     },
     "cta": {
