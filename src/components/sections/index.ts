@@ -1,6 +1,9 @@
-export { Features } from './Features';
 export { Hero } from './Hero';
-export { OpenSource } from './OpenSource';
+export { Workflow } from './Workflow';
+export { Features } from './Features';
 export { Screenshots } from './Screenshots';
+export { Agents } from './Agents';
+export { GetStarted } from './GetStarted';
 export { Stats } from './Stats';
 export { TechStack } from './TechStack';
+export { OpenSource } from './OpenSource';

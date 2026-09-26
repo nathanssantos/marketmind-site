@@ -3,19 +3,19 @@ import Image from 'next/image';
 import { Container } from '@/components/ui';
 
 const SCREENSHOTS = [
-  { src: '/images/screenshot-0.png', alt: 'MarketMind trading dashboard with multi-timeframe charts (15m / 1h / 4h), live Confluence scoring, and active positions' },
-  { src: '/images/screenshot-1.png', alt: 'MarketMind scalping layout (1m / 5m / 15min) with EMAs, volume profile, and active orders' },
-  { src: '/images/screenshot-2.png', alt: 'MarketMind swing trading layout (1h / 4h / 1d) with multi-indicator Confluence panel' },
-  { src: '/images/screenshot-3.png', alt: 'MarketMind Auto-Trading layout with watcher list, active executions, and positions panel' },
-  { src: '/images/screenshot-4.png', alt: 'MarketMind Auto-Scalping layout with order flow metrics and session P&L' },
-  { src: '/images/screenshot-5.png', alt: 'MarketMind Auto-Trading dialog with Trading Profiles, multi-asset watcher list (BTC / ETH / SOL futures), trading mode, and dynamic symbol selection' },
-  { src: '/images/screenshot-6.png', alt: 'MarketMind Market Indicators dashboard — Altcoin Season Index, ADX trend strength, Order Book, Funding Rates, Fear & Greed, BTC Dominance, MVRV Ratio' },
-  { src: '/images/screenshot-8.png', alt: 'MarketMind Wallets dialog with paper-trading wallets, balances, initial balances, and net P&L percentages' },
-  { src: '/images/screenshot-9.png', alt: 'MarketMind trading dashboard (15m / 1h / 4h) in light theme with multi-timeframe charts, Confluence scoring, and active positions' },
-  { src: '/images/screenshot-10.png', alt: 'MarketMind Market Indicators dashboard in light theme — Fear & Greed, BTC Dominance, MVRV Ratio, Altcoin Season, ADX, Order Book' },
-  { src: '/images/screenshot-11.png', alt: 'MarketMind swing trading layout (1h / 4h / 1d) with the Classic black-and-white chart palette' },
-  { src: '/images/screenshot-12.png', alt: 'MarketMind Settings dialog — Chart tab with color palette options (TradingView, Classic B&W, Binance), chart type, and grid configuration' },
-];
+  { key: 'dashboard', src: '/images/screenshot-0.png', wide: true },
+  { key: 'scalping', src: '/images/screenshot-1.png' },
+  { key: 'swing', src: '/images/screenshot-2.png' },
+  { key: 'autoTrading', src: '/images/screenshot-3.png' },
+  { key: 'autoScalping', src: '/images/screenshot-4.png' },
+  { key: 'autoTradingDialog', src: '/images/screenshot-5.png' },
+  { key: 'marketIndicators', src: '/images/screenshot-6.png' },
+  { key: 'wallets', src: '/images/screenshot-8.png' },
+  { key: 'settingsChart', src: '/images/screenshot-12.png' },
+  { key: 'dashboardLight', src: '/images/screenshot-9.png' },
+  { key: 'marketIndicatorsLight', src: '/images/screenshot-10.png' },
+  { key: 'classicPalette', src: '/images/screenshot-11.png' },
+] as const;
 
 export const Screenshots = () => {
   const t = useTranslations('screenshots');
@@ -29,21 +29,32 @@ export const Screenshots = () => {
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">{t('subtitle')}</p>
         </div>
-        <div className="mx-auto max-w-6xl space-y-6">
-          {SCREENSHOTS.map((screenshot) => (
-            <div
-              key={screenshot.src}
-              className="overflow-hidden rounded-xl border border-gray-200 shadow-lg dark:border-gray-800"
+        <div className="grid gap-8 lg:grid-cols-2">
+          {SCREENSHOTS.map((screenshot, index) => (
+            <figure
+              key={screenshot.key}
+              className={'wide' in screenshot && screenshot.wide ? 'lg:col-span-2' : undefined}
             >
-              <Image
-                src={screenshot.src}
-                alt={screenshot.alt}
-                width={1920}
-                height={1080}
-                className="w-full"
-                quality={90}
-              />
-            </div>
+              <div className="overflow-hidden rounded-xl border border-gray-200 shadow-lg dark:border-gray-800">
+                <Image
+                  src={screenshot.src}
+                  alt={t(`items.${screenshot.key}.alt`)}
+                  width={1920}
+                  height={1080}
+                  className="w-full"
+                  sizes={'wide' in screenshot ? '(min-width: 1280px) 1200px, 100vw' : '(min-width: 1024px) 600px, 100vw'}
+                  priority={index === 0}
+                />
+              </div>
+              <figcaption className="mt-3 px-1">
+                <span className="block text-sm font-semibold text-gray-900 dark:text-white">
+                  {t(`items.${screenshot.key}.title`)}
+                </span>
+                <span className="block text-sm text-gray-600 dark:text-gray-400">
+                  {t(`items.${screenshot.key}.caption`)}
+                </span>
+              </figcaption>
+            </figure>
           ))}
         </div>
       </Container>

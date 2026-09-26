@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 import { LOCALES, type Locale } from '@/i18n/routing';
 
-export const alt = 'MarketMind — Algorithmic Trading Assistant';
+export const alt = 'MarketMind — Open-source trading workstation for Binance';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -14,7 +14,7 @@ export default async function Image({ params }: { params: Promise<{ locale: Loca
   const messages = (await import(`@/messages/${locale}.json`)).default;
   const heroTitle: string = messages.hero.title;
   const heroHighlight: string = messages.hero.titleHighlight;
-  const heroDescription: string = messages.hero.description;
+  const tagline: string = messages.footer.description;
   const badge: string = messages.hero.badge;
 
   return new ImageResponse(
@@ -26,7 +26,7 @@ export default async function Image({ params }: { params: Promise<{ locale: Loca
           display: 'flex',
           flexDirection: 'column',
           background: 'linear-gradient(135deg, #1a1f2e 0%, #0d1117 100%)',
-          padding: '64px 72px',
+          padding: '56px 72px',
           position: 'relative',
           fontFamily: 'system-ui, sans-serif',
         }}
@@ -78,16 +78,25 @@ export default async function Image({ params }: { params: Promise<{ locale: Loca
           </span>
         </div>
 
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', zIndex: 1 }}>
+        <div
+          style={{
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            overflow: 'hidden',
+            zIndex: 1,
+          }}
+        >
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            <span style={{ fontSize: 78, fontWeight: 700, color: '#f8fafc', letterSpacing: -2, lineHeight: 1.05 }}>
+            <span style={{ fontSize: 60, fontWeight: 700, color: '#f8fafc', letterSpacing: -1.5, lineHeight: 1.05 }}>
               {heroTitle}
             </span>
             <span
               style={{
-                fontSize: 78,
+                fontSize: 60,
                 fontWeight: 700,
-                letterSpacing: -2,
+                letterSpacing: -1.5,
                 lineHeight: 1.05,
                 background: 'linear-gradient(90deg, #60a5fa 0%, #34d399 100%)',
                 backgroundClip: 'text',
@@ -99,14 +108,14 @@ export default async function Image({ params }: { params: Promise<{ locale: Loca
           </div>
           <p
             style={{
-              fontSize: 26,
+              fontSize: 28,
               color: '#94a3b8',
-              marginTop: 28,
-              lineHeight: 1.4,
+              marginTop: 24,
+              lineHeight: 1.35,
               maxWidth: 1000,
             }}
           >
-            {heroDescription}
+            {tagline}
           </p>
         </div>
 

@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MarketMind landing page
 
-## Getting Started
+Marketing site for [MarketMind](https://github.com/nathanssantos/marketmind), an open-source desktop trading workstation for Binance. Live at [marketmind-app.vercel.app](https://marketmind-app.vercel.app).
 
-First, run the development server:
+## Stack
+
+Next.js (App Router) · React · TypeScript · Tailwind CSS · next-intl (en, pt, es, fr) · next-themes · lucide-react · Vitest.
+
+## Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev          # http://localhost:3000
+pnpm build        # production build
+pnpm start        # serve the production build
+pnpm test         # vitest, run once
+pnpm lint         # eslint, zero warnings allowed
+pnpm type-check   # tsc --noEmit
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Where things live
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/messages/{en,pt,es,fr}.json` — all copy. The four files must have the same keys (`__tests__/translations.test.ts` enforces it). Write English first, then translate.
+- `src/config/site.ts` — URLs, navigation, the numbers shown in the Stats section and the MCP server tool counts. Every number here is counted from the MarketMind repository at release time, not estimated.
+- `src/components/sections/` — one component per page section, in the order used by `src/app/[locale]/page.tsx`.
+- `public/images/screenshot-*.png` — captured from the app by `scripts/visual/marketing-screenshots.mjs` in the MarketMind repository. Regenerate them on every release that changes the UI (see `docs/RELEASE_PROCESS.md` there).
+- `src/app/[locale]/opengraph-image.tsx` — the social preview image, rendered from the hero copy.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Release checklist
 
-## Learn More
+1. Bump `siteConfig.stats.version` in `src/config/site.ts`.
+2. Regenerate the screenshots from the MarketMind repository.
+3. Update any stat that changed (strategies, indicators, MCP tools, tests).
+4. `pnpm test && pnpm lint && pnpm type-check && pnpm build`, then push to `main`. Vercel deploys automatically.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT.

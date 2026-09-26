@@ -1,93 +1,256 @@
 {
   "metadata": {
-    "title": "MarketMind — Algorithmic Trading Assistant",
-    "description": "Open-source desktop app with advanced chart visualization, automated setup detection, backtesting engine, and multi-exchange support."
+    "title": "MarketMind — Open-source trading workstation for Binance",
+    "description": "Desktop app to chart, backtest and auto-trade crypto on Binance. 107 Pine Script strategies, paper wallets, risk limits you set, and an MCP bridge for AI agents. Runs on your own machine."
   },
   "nav": {
     "features": "Features",
     "screenshots": "Screenshots",
-    "techStack": "Tech Stack",
-    "openSource": "Open Source"
+    "agents": "AI agents",
+    "getStarted": "Get started",
+    "openSource": "Open source"
   },
   "hero": {
-    "badge": "Open Source",
-    "title": "Algorithmic Trading,",
-    "titleHighlight": "Reimagined",
-    "description": "A powerful desktop application combining advanced chart visualization with automated setup detection, backtesting, and multi-exchange trading — built for traders who demand precision.",
+    "badge": "Open source · MIT",
+    "title": "Chart, backtest and auto-trade crypto",
+    "titleHighlight": "from your own desktop.",
+    "description": "MarketMind is a desktop trading workstation for Binance spot and futures. Multi-timeframe charts, 107 Pine Script strategies, a backtesting engine, auto-trading with risk limits you set, paper wallets and an MCP bridge for AI agents. The backend and the database run on your machine, so your API keys never leave it.",
     "cta": {
-      "github": "View on GitHub",
-      "download": "Download"
+      "download": "Download for macOS or Windows",
+      "github": "View on GitHub"
+    },
+    "platforms": "macOS (Apple Silicon and Intel) · Windows · MIT license"
+  },
+  "workflow": {
+    "title": "From chart to execution, in one app",
+    "subtitle": "The setups you see on the chart are the same ones the screener, the backtests and the auto-trader use.",
+    "steps": {
+      "chart": {
+        "title": "Watch",
+        "description": "Open a symbol on several timeframes at once. Add indicators, volume profile, the liquidity heatmap and drawings, and trade straight from the chart."
+      },
+      "detect": {
+        "title": "Detect",
+        "description": "Enable strategies and MarketMind marks setups on the chart as candles close. The confluence ladder scores each entry across timeframes before it fires."
+      },
+      "backtest": {
+        "title": "Validate",
+        "description": "Run the same strategies over years of stored candles with fees, filters and position caps. Compare the numbers before risking anything."
+      },
+      "trade": {
+        "title": "Automate",
+        "description": "Start watchers on the symbols and timeframes you trust. Trading profiles decide sizing, stops, targets and filters. One button stops everything."
+      }
     }
   },
   "features": {
-    "title": "Everything You Need",
-    "subtitle": "Professional-grade tools for algorithmic trading, all in one open-source desktop application.",
-    "charts": {
-      "title": "Advanced Charts",
-      "description": "High-performance Canvas-based kline rendering with 35+ technical indicators, drawing tools, volume profile, and multi-timeframe views."
+    "title": "What is inside",
+    "subtitle": "Everything below ships in the app today. Beta features are marked.",
+    "groups": {
+      "charting": "Charting",
+      "strategies": "Strategies and backtesting",
+      "execution": "Execution and risk",
+      "market": "Market data and platform"
     },
-    "heatmap": {
-      "title": "Liquidity Heatmap",
-      "description": "Real-time order book depth visualization with thermal overlay, bid/ask separation, and liquidation event tracking stored in TimescaleDB."
-    },
-    "pineScript": {
-      "title": "PineScript Engine",
-      "description": "Write and run strategies in PineScript v5 — the same language used by TradingView. 106 built-in strategies ready to use, or create your own."
-    },
-    "screener": {
-      "title": "Screener & Scanners (beta)",
-      "description": "Market screener with customizable filters, real-time scanners for setup detection, and market-wide indicator dashboards. Currently in beta."
-    },
-    "autoTrading": {
-      "title": "Auto-Trading",
-      "description": "Execute trades automatically with 105+ backtested strategies, OCO orders, risk management, and real-time monitoring via WebSocket."
-    },
-    "backtesting": {
-      "title": "Backtesting Engine",
-      "description": "Walk-forward optimization, Monte Carlo simulation, batch testing across multiple strategies, symbols, and timeframes."
-    },
-    "security": {
-      "title": "Bank-Grade Security",
-      "description": "AES-256-CBC encrypted storage for API keys, Argon2 password hashing, session-based auth with optional 2FA."
-    },
-    "exchanges": {
-      "title": "Binance Integration",
-      "description": "Trade crypto on Binance with deep WebSocket integration — futures, spot, OCO, trailing stops, and real-time streams."
-    },
-    "mcp": {
-      "title": "Built for AI Agents",
-      "description": "Four Model Context Protocol servers expose 47 tools — drive the app, query the database, run backtests, and capture screenshots straight from Claude Code, ChatGPT, or any MCP client."
-    },
-    "openSource": {
-      "title": "100% Open Source",
-      "description": "MIT licensed. Inspect, modify, and contribute to the entire codebase — from frontend to backend."
+    "items": {
+      "layouts": {
+        "title": "Multi-timeframe layouts",
+        "description": "See the same symbol at 1m, 5m and 15m, or 1h, 4h and 1d, side by side, across 16 timeframes from one minute to one year. Layout presets hold charts, the order ticket, positions, the order book and metrics as resizable panels, and any chart can detach into its own window."
+      },
+      "indicators": {
+        "title": "45+ indicators, 20 drawing tools",
+        "description": "Moving averages, RSI, MACD, Bollinger, Ichimoku, SuperTrend, VWAP and more, plus volume profile, liquidity heatmap, opening-range breakout and fair-value gaps. Fibonacci, pitchfork, channels, long and short positions and the usual lines, saved with undo and redo. 25 candle patterns, or define your own."
+      },
+      "liveData": {
+        "title": "Live data that keeps moving",
+        "description": "Candles stream from Binance and are stored locally in PostgreSQL, with history back to 2017 for spot and 2019 for futures. A watchdog reconnects silent streams, the chart opens the next bar itself when a close is missed, and gaps in history are repaired on their own."
+      },
+      "strategies": {
+        "title": "107 Pine Script strategies",
+        "description": "Breakouts, pullbacks, divergences, mean reversion and momentum, written in Pine Script v5 and executed by a Pine engine on the backend. Tune parameters per strategy or drop your own .pine file into the strategies folder."
+      },
+      "confluence": {
+        "title": "Confluence ladder",
+        "description": "Per trading profile, list the conditions an entry must meet: indicator, threshold, timeframe, required or preferred. Required conditions must all pass and count double, and the score updates live next to the chart."
+      },
+      "backtesting": {
+        "title": "Backtesting engine",
+        "description": "In the app, run any strategy on a symbol and timeframe over stored history with taker fees, trend, correlation and regime filters, and a cap on concurrent positions. From the command line, batch runs across strategies, symbols and timeframes, walk-forward and Monte Carlo."
+      },
+      "autoTrading": {
+        "title": "Auto-trading with watchers",
+        "description": "A watcher follows one symbol on one timeframe and opens a trade when a setup passes its profile, or only suggests it in semi-assisted mode. Rotate symbols by opportunity score, start the top 20 in one click, stop all with one button. An auto-scalping mode (beta) runs order-flow strategies on the 1m chart."
+      },
+      "risk": {
+        "title": "Risk controls you set",
+        "description": "Fibonacci or swing-based targets and stops, minimum risk/reward, max risk per stop, daily loss limit and max drawdown limit, higher-timeframe and BTC-correlation filters, trailing stops, and liquidation warnings on open positions. Leverage and margin type are yours to set."
+      },
+      "trading": {
+        "title": "Paper first, live when ready",
+        "description": "Paper wallets simulate fills and fees with the same flow as a live or testnet Binance wallet. Per-wallet analytics show performance, a daily P&L calendar and an equity curve that ignores deposits and withdrawals."
+      },
+      "marketContext": {
+        "title": "Market context dashboard",
+        "description": "Fear & Greed, BTC dominance, MVRV, production cost, open interest, long/short ratio, altcoin season, ADX trend strength, order-book pressure and funding rates, each in its own panel."
+      },
+      "screener": {
+        "title": "Screener and custom symbols (beta)",
+        "description": "Scan every symbol with 13 presets such as oversold uptrend, volume spike or breakout candidates, or build filters over 32 fields and save them. Compose custom indices from several symbols with weighted aggregation and chart them like any pair."
+      },
+      "local": {
+        "title": "Runs on your machine",
+        "description": "The desktop app talks to a backend and a PostgreSQL database that you run locally. API keys are encrypted at rest with AES-256 and never leave your computer. No account with us, no cloud."
+      }
     }
   },
   "screenshots": {
-    "title": "See It in Action",
-    "subtitle": "A glimpse of MarketMind's interface across different views and themes.",
-    "placeholder": "Screenshots coming soon"
+    "title": "The app, as it runs",
+    "subtitle": "Real layouts captured from the app with demo paper wallets. Dark and light themes, five chart palettes.",
+    "items": {
+      "dashboard": {
+        "title": "Trading dashboard · 15m / 1h / 4h",
+        "caption": "Three timeframes of BTCUSDT futures, the order ticket with SL/TP, wallet exposure and the confluence ladder.",
+        "alt": "MarketMind trading dashboard with 15m, 1h and 4h BTCUSDT charts, order ticket, wallet exposure panel and confluence ladder"
+      },
+      "scalping": {
+        "title": "Scalping · 1m / 5m / 15m",
+        "caption": "Fast timeframes with EMAs, volume and the confluence ladder for entries.",
+        "alt": "MarketMind scalping layout with 1m, 5m and 15m charts, EMAs, volume and the confluence ladder"
+      },
+      "swing": {
+        "title": "Swing · 1h / 4h / 1d",
+        "caption": "Higher timeframes for positions held for days, with the same tools.",
+        "alt": "MarketMind swing layout with 1h, 4h and 1d charts"
+      },
+      "autoTrading": {
+        "title": "Auto-trading layout",
+        "caption": "Active watchers on BTC, ETH and SOL, position size per trade and a stop-all button next to the charts.",
+        "alt": "MarketMind auto-trading layout with active watchers list, position size slider and stop-all button"
+      },
+      "autoScalping": {
+        "title": "Auto-scalping layout",
+        "caption": "Order-book ladder and order-flow metrics: CVD, imbalance, spread, absorption, microprice and exhaustion.",
+        "alt": "MarketMind auto-scalping layout with order book ladder, order flow metrics and session P&L"
+      },
+      "autoTradingDialog": {
+        "title": "Auto-trading dialog",
+        "caption": "Trading profiles with enabled setups and concurrency caps, emergency stop, watchers and dynamic symbol rotation.",
+        "alt": "MarketMind auto-trading dialog with trading profiles, emergency stop, active watchers and dynamic symbol selection"
+      },
+      "marketIndicators": {
+        "title": "Market indicators",
+        "caption": "Ten market-context panels in one layout, from Fear & Greed to funding rates.",
+        "alt": "MarketMind market indicators layout with Fear & Greed, BTC dominance, MVRV, production cost, open interest, long/short ratio, altcoin season, ADX, order book pressure and funding rates panels"
+      },
+      "wallets": {
+        "title": "Wallets",
+        "caption": "Paper wallets with balance, fees and net P&L, next to live or testnet Binance wallets.",
+        "alt": "MarketMind wallets dialog with two paper wallets showing balance, initial balance, gross, fees and net P&L"
+      },
+      "settingsChart": {
+        "title": "Chart settings",
+        "caption": "Chart type, display options, five color palettes and chart dimensions.",
+        "alt": "MarketMind settings dialog on the Chart tab with display options, color palettes and chart dimensions"
+      },
+      "dashboardLight": {
+        "title": "Light theme",
+        "caption": "The same trading dashboard in the light theme.",
+        "alt": "MarketMind trading dashboard in the light theme"
+      },
+      "marketIndicatorsLight": {
+        "title": "Market indicators · light theme",
+        "caption": "The market-context panels in the light theme.",
+        "alt": "MarketMind market indicators layout in the light theme"
+      },
+      "classicPalette": {
+        "title": "Classic black-and-white palette",
+        "caption": "The swing layout with the Classic B&W chart palette.",
+        "alt": "MarketMind swing layout with the Classic black-and-white chart palette"
+      }
+    }
+  },
+  "agents": {
+    "title": "Built for AI agents too",
+    "subtitle": "Five Model Context Protocol servers expose the app, the database, the strategies and trade execution to Claude Code, ChatGPT desktop or any MCP client.",
+    "toolCount": "{count} tools",
+    "servers": {
+      "app": {
+        "name": "@marketmind/mcp-app",
+        "description": "Drives the running app: navigate symbols, change timeframes and chart types, toggle indicators, open dialogs, switch themes."
+      },
+      "backend": {
+        "name": "@marketmind/mcp-backend",
+        "description": "Read-only access to wallets, orders, executions, setups, watchers and candles, plus a tRPC bridge and the audit log."
+      },
+      "strategy": {
+        "name": "@marketmind/mcp-strategy",
+        "description": "List, create, diff and export Pine strategies, run backtests and read their results."
+      },
+      "trading": {
+        "name": "@marketmind/mcp-trading",
+        "description": "Place and cancel orders, set stop-loss and take-profit, close positions and read wallet status, on paper wallets only."
+      },
+      "screenshot": {
+        "name": "@marketmind/mcp-screenshot",
+        "description": "Captures any tab, dialog or sidebar in light and dark, with side-by-side galleries for visual checks."
+      }
+    },
+    "safety": {
+      "title": "Writes are gated",
+      "description": "Agents can read everything. Trade execution is off by default, enabled per wallet, limited to paper wallets and 30 writes per hour, and every call lands in an audit log you can inspect in Settings."
+    },
+    "cta": "Read the MCP docs"
+  },
+  "getStarted": {
+    "title": "Get started",
+    "subtitle": "Three steps. Everything runs locally.",
+    "steps": {
+      "download": {
+        "title": "Install the desktop app",
+        "description": "Download the DMG for macOS or the installer for Windows from GitHub Releases. The macOS build is not notarized yet, so allow it once in System Settings. Later updates arrive through the app."
+      },
+      "backend": {
+        "title": "Start the backend",
+        "description": "Clone the repository, start PostgreSQL with Docker Compose and run the backend. The quick start guide walks through it in five minutes."
+      },
+      "connect": {
+        "title": "Connect a wallet",
+        "description": "Create a paper wallet to trade with simulated money, or add Binance API keys. Keys are encrypted and stored only on your computer, and live orders stay off until you enable them in the backend settings."
+      }
+    },
+    "requirements": {
+      "label": "Requirements",
+      "macos": "macOS 10.15+",
+      "windows": "Windows 10+",
+      "node": "Node.js 24 and pnpm for the backend",
+      "docker": "Docker for the database",
+      "binance": "Binance account for live trading"
+    },
+    "cta": {
+      "download": "Download",
+      "quickStart": "Quick start guide"
+    }
+  },
+  "stats": {
+    "title": "By the numbers",
+    "subtitle": "Counted from the repository at each release.",
+    "strategies": "Built-in strategies",
+    "indicators": "Technical indicators",
+    "mcpTools": "MCP tools",
+    "tests": "Automated tests",
+    "languages": "Languages",
+    "version": "Current version"
   },
   "techStack": {
-    "title": "Built With Modern Tech",
-    "subtitle": "A carefully chosen stack for performance, type safety, and developer experience.",
+    "title": "Under the hood",
+    "subtitle": "TypeScript end to end: an Electron app, a Fastify backend and PostgreSQL for candle history.",
     "frontend": "Frontend",
     "backend": "Backend",
     "infrastructure": "Infrastructure"
   },
-  "stats": {
-    "title": "By the Numbers",
-    "subtitle": "Quality and scale you can trust.",
-    "tests": "Tests Passing",
-    "strategies": "Trading Strategies",
-    "indicators": "Technical Indicators",
-    "languages": "Languages",
-    "exchanges": "Exchanges",
-    "version": "Current Version"
-  },
   "openSource": {
-    "title": "Free & Open Source",
-    "subtitle": "MarketMind is MIT licensed and built in the open. Contributions are welcome.",
+    "title": "Free and open source",
+    "subtitle": "MIT licensed and developed in the open. Read the code, open an issue or send a pull request.",
     "cta": {
       "github": "Star on GitHub",
       "contribute": "Contribute"
@@ -95,12 +258,12 @@
     "license": "MIT License"
   },
   "footer": {
-    "description": "Open-source algorithmic trading assistant.",
+    "description": "Open-source trading workstation for Binance. Runs on your machine.",
     "links": "Links",
     "legal": "Legal",
+    "quickStart": "Quick start",
     "builtBy": "Built by",
     "license": "MIT License",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "disclaimer": "MarketMind is software, not financial advice. Trading cryptocurrencies and derivatives carries a substantial risk of loss, and backtest results do not guarantee future performance. You are responsible for your trades and your API keys."
   }
 }

@@ -47,6 +47,16 @@ export const Footer = () => {
               </li>
               <li>
                 <a
+                  href={siteConfig.docs.quickStart}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                >
+                  {t('quickStart')}
+                </a>
+              </li>
+              <li>
+                <a
                   href={`${siteConfig.github}/issues`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +75,7 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href={`${siteConfig.github}/blob/main/LICENSE`}
+                  href={siteConfig.docs.license}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-gray-500 transition-colors hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -77,7 +87,10 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 py-6 dark:border-gray-800">
+        <div className="space-y-4 border-t border-gray-200 py-6 dark:border-gray-800">
+          <p className="mx-auto max-w-3xl text-center text-xs leading-relaxed text-gray-500 dark:text-gray-500">
+            {t('disclaimer')}
+          </p>
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">
             {t('builtBy')}{' '}
             <a
